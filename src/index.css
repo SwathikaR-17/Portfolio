@@ -253,6 +253,126 @@ body {
   max-width: 52rem;
 }
 
+.about-shell {
+  isolation: isolate;
+}
+
+.about-heading {
+  margin: 0;
+  font-family: var(--font-editorial);
+  font-size: clamp(3.4rem, 8.2vw, 5.8rem);
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(245, 247, 250, 0.95);
+  text-wrap: balance;
+}
+
+.experiments-heading {
+  margin: 0;
+  font-family: var(--font-editorial);
+  font-size: clamp(3.3rem, 8.4vw, 5.9rem);
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(245, 247, 250, 0.96);
+  text-wrap: balance;
+}
+
+.experience-heading {
+  margin: 0;
+  font-family: var(--font-editorial);
+  font-size: clamp(3rem, 7.8vw, 5.2rem);
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(245, 247, 250, 0.96);
+  text-wrap: balance;
+}
+
+.experience-tear {
+  position: absolute;
+  inset: 0;
+  width: clamp(1.35rem, 2vw, 1.8rem);
+  left: 50%;
+  transform: translateX(-50%);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 8%, transparent 92%, rgba(255, 255, 255, 0.03)),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.18), transparent 22%, transparent 78%, rgba(0, 0, 0, 0.14));
+  clip-path: polygon(0 0, 100% 0, 100% 7%, 84% 12%, 68% 20%, 56% 30%, 40% 37%, 24% 46%, 16% 58%, 24% 66%, 40% 74%, 58% 82%, 72% 90%, 84% 96%, 100% 100%, 0 100%, 0 92%, 18% 84%, 34% 74%, 50% 63%, 64% 52%, 76% 38%, 70% 24%, 56% 13%, 36% 6%, 18% 4%);
+  box-shadow: inset 0 0 0 1px rgba(111, 163, 255, 0.14);
+  filter: drop-shadow(0 0 14px rgba(58, 123, 255, 0.04));
+}
+
+.experience-annotation {
+  font-family: var(--font-terminal);
+  font-size: 0.58rem;
+  line-height: 1;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(111, 163, 255, 0.62);
+  padding: 0.25rem 0.35rem;
+  border: 1px solid rgba(111, 163, 255, 0.14);
+  background: rgba(7, 17, 31, 0.42);
+  backdrop-filter: blur(8px);
+}
+
+.camera-grid,
+.stoma-grid,
+.dashboard-grid,
+.sensor-grid,
+.fashion-grid {
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(0 0 18px rgba(58, 123, 255, 0.08));
+}
+
+.camera-grid {
+  background-image:
+    radial-gradient(circle at 28% 35%, rgba(111, 163, 255, 0.16) 0 2px, transparent 2px),
+    radial-gradient(circle at 72% 65%, rgba(111, 163, 255, 0.16) 0 2px, transparent 2px),
+    linear-gradient(rgba(111, 163, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111, 163, 255, 0.08) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 52px 52px, 52px 52px;
+}
+
+.stoma-grid {
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(111, 163, 255, 0.12) 0 10px, transparent 10px),
+    linear-gradient(90deg, rgba(111, 163, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(rgba(111, 163, 255, 0.06) 1px, transparent 1px);
+  background-size: 100% 100%, 38px 38px, 38px 38px;
+}
+
+.dashboard-grid {
+  background-image:
+    linear-gradient(rgba(111, 163, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111, 163, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, transparent 0 15%, rgba(111, 163, 255, 0.08) 15% 16%, transparent 16% 100%);
+  background-size: 48px 48px, 48px 48px, 100% 100%;
+}
+
+.sensor-grid {
+  background-image:
+    radial-gradient(circle at 30% 35%, rgba(111, 163, 255, 0.14) 0 2.6px, transparent 2.6px),
+    radial-gradient(circle at 70% 62%, rgba(111, 163, 255, 0.14) 0 2.6px, transparent 2.6px),
+    linear-gradient(rgba(111, 163, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111, 163, 255, 0.06) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+}
+
+.fashion-grid {
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(111, 163, 255, 0.14) 0 10px, transparent 10px),
+    linear-gradient(120deg, rgba(111, 163, 255, 0.05) 0 8%, transparent 8% 100%),
+    linear-gradient(rgba(111, 163, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111, 163, 255, 0.06) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 44px 44px, 44px 44px;
+}
+
 @media (max-width: 1023px) {
   .hero-name {
     font-size: clamp(4.4rem, 18vw, 9rem);

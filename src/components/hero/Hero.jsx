@@ -9,10 +9,10 @@ import {
 
 const statusRows = [
   ['STATUS', 'EXPERIMENTING'],
-  ['FIELD', 'AI / IoT / INTERACTION'],
+  ['FIELD', 'AI / IoT'],
   ['CURRENT STATE', 'EVOLVING'],
   ['LOCATION', 'HYDERABAD'],
-  ['MODE', 'LEARNING IN PUBLIC'],
+  ['MODE', 'ARTIFICIAL HUMAN'],
 ]
 
 const typePhrases = [
@@ -178,9 +178,9 @@ export default function Hero() {
         </motion.span>
       ))}
 
-      <div className="relative z-10 mx-auto flex min-h-svh w-full max-w-7xl flex-col justify-between px-6 py-20 sm:px-8 lg:px-12">
+      <div className="relative z-10 mx-auto flex min-h-svh w-full max-w-[90rem] flex-col justify-between px-6 py-20 sm:px-8 lg:px-16">
         <motion.div
-          className="mt-10 grid flex-1 items-center gap-12 lg:grid-cols-[minmax(0,1.18fr)_minmax(320px,0.82fr)]"
+          className="mt-10 grid flex-1 items-center gap-8 lg:grid-cols-[1.15fr_0.85fr]"
           initial="hidden"
           animate="visible"
           variants={{
@@ -188,7 +188,7 @@ export default function Hero() {
             visible: { transition: { staggerChildren: 0.16, delayChildren: 0.22 } },
           }}
         >
-          <div className="max-w-5xl">
+          <div className="max-w-4xl">
             <motion.p
               className="terminal-kicker mb-5 flex items-center gap-3 text-[rgba(111,163,255,0.72)]"
               variants={revealVariant}
@@ -210,7 +210,7 @@ export default function Hero() {
             </h1>
 
             <motion.p
-              className="mt-8 max-w-md font-[var(--font-editorial)] text-lg leading-8 text-[rgba(245,247,250,0.68)] sm:text-xl"
+              className="mt-10 max-w-lg font-[var(--font-editorial)] text-lg leading-8 text-[rgba(245,247,250,0.68)] sm:text-xl"
               variants={revealVariant}
             >
               I build things before I fully know how.
@@ -218,7 +218,7 @@ export default function Hero() {
           </div>
 
           <motion.aside
-            className="system-panel justify-self-start lg:justify-self-end"
+            className="system-panel justify-self-start lg:justify-self-end lg:mr-2"
             variants={revealVariant}
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
